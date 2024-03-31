@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Hello">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="checkbox" onchange={handleOnChecked}></lightning-input>
+        </div>        <template if:true={showMe}>
+            <div class="slds-p-around_medium lgc-bg">
+                <p class="slds-p-horizontal_small">My name is {myName}</p>
+            </div>
+        </template>
+        <template if:false={showMe}>
+            <div class="slds-p-around_medium lgc-bg">
+                <p class="slds-p-horizontal_small">My name is {yourName}</p>
+            </div>
+        </template>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+</template>
