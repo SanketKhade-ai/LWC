@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Hello">
+        <p class="slds-p-horizontal_small">My name is {myName}</p>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" name="firstName" label="Enter your FirstName" onchange={handleOnChange}></lightning-input>
+        </div>
+    <br/>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" name="lastName" label="Enter your LastName" onchange={handleOnChange}></lightning-input>
+    </div>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>
+</template>
